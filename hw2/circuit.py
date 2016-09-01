@@ -339,7 +339,8 @@ class Transition:
         id = Transition._next_id
         Transition._next_id += 1
         return id
-#homework begins
+
+#HOMEWORK BEGINS
 class PriorityQueue:
     def __init__(self):
         self.heap = [None]
@@ -400,7 +401,8 @@ class PriorityQueue:
         if st != i:
             self.heap[i], self.heap[st] = self.heap[st], self.heap[i]
             self.max_heapify(st)
-#homework ends
+#HOMEWORK ENDS
+
 class Simulation:
     """State needed to compute a circuit's state as it evolves over time."""
 

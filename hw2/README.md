@@ -1,3 +1,5 @@
+Homework solution in the implementation of PQueue. --EJ
+
 Circuit Simulation code for MIT 6.006 Fall 2011 PS2
 
 The code distribution contains the following files:
@@ -11,7 +13,6 @@ The code distribution contains the following files:
   * visualizer/bin/visualizer.html - visualizes the simulator output
   * visualizer/README.txt - Readme for the visualizer source code
   * visualizer/* - visualizer source code
-
 
 DEPENDENCIES
 
