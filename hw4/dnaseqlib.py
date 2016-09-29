@@ -20,6 +20,7 @@ class RollingHash:
             h += ord(c) * (self.HASH_BASE ** n)
             n -= 1
         self.curhash = h
+        self.multiplier = 7 ** self.seqlen; # cache multiplier
 
     def current_hash(self):
         return self.curhash
@@ -27,7 +28,7 @@ class RollingHash:
     # hash value.
     def slide(self, previtm, nextitm):
         self.curhash = (self.curhash * self.HASH_BASE) + ord(nextitm)
-        self.curhash -= ord(previtm) * (self.HASH_BASE ** self.seqlen)
+        self.curhash -= ord(previtm) * (self.multiplier)
         return self.curhash
 
 # A simple 2D integer array implementation on top of Python's built-in 1D array.
